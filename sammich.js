@@ -41,30 +41,28 @@ function makeMeASandwich(pickle, lettuce, tomato, ketchup, mustard, mayo) {
   ketchuper(ketchup);
   mustarder(mustard);
   mayoer(mayo);
+  if (sandwich.pickle === true) {
+    docOutput[docOutput.length] = "pickle";
+  }
+  if (sandwich.lettuce === true) {
+    docOutput[docOutput.length] = "lettuce";
+  }
+  if (sandwich.tomato === true) {
+    docOutput[docOutput.length] = "tomato";
+  }
+  if (sandwich.ketchup === true) {
+    docOutput[docOutput.length] = "ketchup";
+  }
+  if (sandwich.mustard === true) {
+    docOutput[docOutput.length] = "mustard";
+  }
+  if (sandwich.mayo === true) {
+    docOutput[docOutput.length] = "mayo";
+  }
+  if (docOutput.length === 0) {
+    docOutput[docOutput.length] = "nothing";
+  }
+  document.write("My sandwich has " + docOutput.join(", ") + " on it.");
 }
 
 makeMeASandwich(false, false, false, true, false, false);
-
-if (sandwich.pickle === true) {
-  docOutput[docOutput.length] = "pickle";
-}
-if (sandwich.lettuce === true) {
-  docOutput[docOutput.length] = "lettuce";
-}
-if (sandwich.tomato === true) {
-  docOutput[docOutput.length] = "tomato";
-}
-if (sandwich.ketchup === true) {
-  docOutput[docOutput.length] = "ketchup";
-}
-if (sandwich.mustard === true) {
-  docOutput[docOutput.length] = "mustard";
-}
-if (sandwich.mayo === true) {
-  docOutput[docOutput.length] = "mayo";
-}
-if (docOutput.length === 0) {
-  docOutput[docOutput.length] = "nothing";
-}
-
-document.write("My sandwich has " + docOutput.join(", ") + " on it.");
