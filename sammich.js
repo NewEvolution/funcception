@@ -65,7 +65,7 @@ function makeMeASandwich(pickle, lettuce, tomato, ketchup, mustard, mayo) {
   if (docOutput.length === 0) {
     docOutput[docOutput.length] = "nothing";
   }
-  document.write("My sandwich has " + docOutput.join(", ") + " on it.");
+  document.write("My sandwich has " + docOutput.join(", ") + " on it. ");
 }
 
 makeMeASandwich(false, false, false, true, false, false);
