@@ -1,4 +1,5 @@
 var condimentCount = 0;
+var sandwichHolder = document.getElementById("sammich");
 
 var sandwich = {
   pickle: false,
@@ -65,7 +66,7 @@ function makeMeASandwich(pickle, lettuce, tomato, ketchup, mustard, mayo) {
   if (docOutput.length === 0) {
     docOutput[docOutput.length] = "nothing";
   }
-  document.write("My sandwich has " + docOutput.join(", ") + " on it. ");
+  sandwichHolder.innerHTML = ("My sandwich has " + docOutput.join(", ") + " on it. ");
 }
 
 makeMeASandwich(false, false, false, true, false, false);
