@@ -1,4 +1,3 @@
-var docOutput = [];
 var condimentCount = 0;
 
 var sandwich = {
@@ -35,6 +34,7 @@ function mayoer(value) {
 }
 
 function makeMeASandwich(pickle, lettuce, tomato, ketchup, mustard, mayo) {
+  var docOutput = [];
   pickler(pickle);
   lettucer(lettuce);
   tomatoer(tomato);
@@ -58,6 +58,9 @@ function makeMeASandwich(pickle, lettuce, tomato, ketchup, mustard, mayo) {
   }
   if (sandwich.mayo === true) {
     docOutput[docOutput.length] = "mayo";
+  }
+  if (docOutput.length > 1) {
+    docOutput[(docOutput.length - 1)] = "and " + docOutput[(docOutput.length - 1)];
   }
   if (docOutput.length === 0) {
     docOutput[docOutput.length] = "nothing";
