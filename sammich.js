@@ -43,13 +43,13 @@ function makeMeASandwich(pickle, lettuce, tomato, ketchup, mustard, mayo) {
   mustarder(mustard);
   mayoer(mayo);
   if (sandwich.pickle === true) {
-    docOutput[docOutput.length] = "pickle";
+    docOutput[docOutput.length] = "pickles";
   }
   if (sandwich.lettuce === true) {
     docOutput[docOutput.length] = "lettuce";
   }
   if (sandwich.tomato === true) {
-    docOutput[docOutput.length] = "tomato";
+    docOutput[docOutput.length] = "tomatoes";
   }
   if (sandwich.ketchup === true) {
     docOutput[docOutput.length] = "ketchup";
